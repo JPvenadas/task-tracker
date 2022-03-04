@@ -26,7 +26,7 @@ body {
   align-items: center;
   border-bottom: gray 6px solid;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: rgb(75, 75, 75);
 }
 
@@ -59,7 +59,7 @@ body {
 
 .task {
   background: #f4f4f4;
-  margin: 5px;
+  margin: 10px 5px;
   padding: 10px 20px;
   cursor: pointer;
 }
