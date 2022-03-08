@@ -40,9 +40,18 @@ const App = () =>{
       const togglereminder = (id)=>{
         setTasks(tasks.map(task=>id === task.id? {...task,reminder: !task.reminder}: task))
       }
+      const closeAdd = () =>{
+        setShowAdd(false)
+      }
+      const onSubmit = (task)=>{
+        
+         let newtask = { id: Math.floor(Math.random()*100000000), ...task}
+        setTasks([...tasks, newtask])
+      
+      }
   return(
     <div className="container">
-      {showAdd? <Addtask /> : ''}
+      {showAdd? <Addtask onSubmit={onSubmit} onClose={closeAdd}/> : ''}
       <Header onAdd={addTask}/>
       {tasks.length > 0? <Tasks tasklist={tasks} onToggle={togglereminder} onDelete={deleteTask}/>:'No task to show'}
     </div>
