@@ -5,32 +5,7 @@ import Addtask from "./components/Addtask"
 
 const App = () =>{
    const [showAdd, setShowAdd] = useState(false)
-   const [tasks, setTasks] = useState([
-        {
-            id: 1,
-            description: 'Outing with friends',
-            day: 'Monday at 8:00 AM',
-            reminder: false
-        },
-        {
-            id: 2,
-            description: 'Shopping groceries',
-            day: 'Tuesday at 10:00 AM',
-            reminder: false
-        },
-        {
-            id: 3,
-            description: 'Finish work assignments',
-            day: 'Tuesday at 5:00 PM',
-            reminder: false
-        },
-        {
-            id: 4,
-            description: 'Attend online meetings',
-            day: 'Wednesday at 9:00 AM',
-            reminder: false
-        }
-      ])
+   const [tasks, setTasks] = useState([])
       const addTask = ()=>{
         setShowAdd(true)
       }
@@ -47,6 +22,7 @@ const App = () =>{
         
          let newtask = { id: Math.floor(Math.random()*100000000), ...task}
         setTasks([...tasks, newtask])
+        setShowAdd(false)
       
       }
   return(

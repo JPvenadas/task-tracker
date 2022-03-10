@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "description": "Outing with friends",
+      "day": "Monday at 8:00 AM",
+      "reminder": "false"
+    },
+    {
+      "id": 2,
+      "description": "Shopping Groceries",
+      "day": "Thursday at 8:00 AM",
+      "reminder": "false"
+    },
+    {
+      "id": 3,
+      "description": "Develop Applications",
+      "day": "Friday at 8:00 AM",
+      "reminder": "false"
+    }  
+  ]
+}
