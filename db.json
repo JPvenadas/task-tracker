@@ -5,6 +5,12 @@
       "day": "Monday at 8:00 AM",
       "reminder": true,
       "id": 1
+    },
+    {
+      "description": "Making Projects",
+      "day": "Monday at 9:00 PM",
+      "reminder": false,
+      "id": 2
     }
   ]
 }
