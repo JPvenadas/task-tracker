@@ -3,7 +3,7 @@
     {
       "description": "Eating Breakfast",
       "day": "Monday at 8:00 AM",
-      "reminder": true,
+      "reminder": false,
       "id": 1
     },
     {
